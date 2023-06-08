@@ -1,0 +1,413 @@
+@use './var'as var;
+@use './mixin' as mixin;
+@use './basic';
+// -------------------------------------------
+
+
+
+#root{
+  @include mixin.container-style(100vw, 500vh, space-between, center, column );
+}
+
+main{
+  @include mixin.container-style(100%, 100%, space-around, center, column );
+}
+
+#title{
+  @include mixin.container-style(100%, 12%, center, center, column );
+  position: relative;
+  // background-color: aqua;
+  // background-image: url(https://image.rakuten.co.jp/smartforyou/cabinet/09728902/summer_pool.jpg);
+  &>img{
+    @include mixin.container-style(100%, 100%, center, center);
+    mix-blend-mode: multiply;
+    opacity: 0.6;
+    @include mixin.posi(absolute,0,0,-1);
+
+  }
+  
+  &>div:nth-child(2){
+    @include mixin.container-style(90%, 65%, space-around, center);
+    background-color: #ffffff;
+
+    &>div:nth-child(1){
+      @include mixin.container-style(50%, 45%, center, flex-start);
+      @include mixin.posi(relative,-10%,5%,1);
+      // border: solid salmon 1px;
+    }
+
+    &>img{
+      @include mixin.container-style(30%, 50%, center, center);
+      border-radius: 50px;
+      @include mixin.posi(relative,10%,0,1);
+    }
+  }
+
+  &>div:nth-child(3){
+    @include mixin.container-style(90%, 25%, space-around, center);
+    background-color: var.$col-0;
+
+    &>img{
+      @include mixin.container-style(40%, 50%, center, center);
+      border-radius: 100px;
+      @include mixin.posi(absolute, 40%, 10%,0);
+    }
+
+    &>div:nth-child(2){
+      display: none;
+    }
+  }
+}
+
+#content-mb{
+  @include mixin.container-style(100%, 34%, space-between, center, column);
+  
+  &>div:nth-child(1){
+    @include mixin.container-style(100%, 10%, space-around, center);
+    // background-color: beige;
+  // border: #000 solid 1px;
+  position: relative;
+
+    &>div:nth-child(1){
+      @include mixin.container-style(90%, 100%, space-around, flex-start, column );
+      // border: #000 solid 1px;
+
+      &>h3{
+        @include mixin.container-style(90%, 20%, flex-start, center);
+        // background-color: aliceblue;
+        color: #174C69;
+      }
+
+      &>div{
+        @include mixin.container-style(75%, 70%, flex-start, center);
+        font-size: 0.95rem;
+        // border: #000 solid 1px;
+        padding-left: 1px;
+      }
+    }
+
+    &>div:nth-child(2){
+      @include mixin.box-style(120px, 120px, var.$col-0, 100%);
+      @include mixin.posi(absolute, -15%, 85%,0);
+    }
+  }
+  
+  &>div:nth-child(2){
+    @include mixin.container-style(100%, 90%, space-between, center, column);
+    &>div:nth-child(1){
+      @include mixin.flex(flex-end, flex-end,column);
+      
+      &>div:nth-child(1){
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        // border: #000 solid 1px;
+      }
+  
+      &>div:nth-child(2){
+        @include mixin.box-style(90px, 90px, var.$col-0, 100%);
+        @include mixin.posi(absolute, 10%, 20%,0);
+      }
+  
+        &>div:nth-child(3){
+        @include mixin.box-style(70px, 70px, var.$col-0, 100%);
+        @include mixin.posi(absolute, 80%, -10%,0);
+      }
+    }
+  
+    &>div:nth-child(2){
+      @include mixin.flex(flex-end, flex-start,column);
+  
+      &>div:nth-child(1){
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+  
+      &>div:nth-child(2){
+        @include mixin.box-style(180px, 180px, var.$col-0, 100%);
+        @include mixin.posi(absolute, 28%, 45%,0);
+      }
+    }
+  
+    &>div:nth-child(3){
+      @include mixin.flex(flex-end, flex-end,column);
+  
+      &>div:nth-child(1){
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+  
+      &>div:nth-child(2){
+        @include mixin.box-style(120px, 120px, var.$col-0, 100%);
+        @include mixin.posi(absolute, 60%, 2%, 0);
+      }
+  
+    }
+  
+    &>div:nth-child(4){
+      @include mixin.flex(flex-end, flex-start,column);
+  
+      &>div:nth-child(1){
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+  
+      &>div:nth-child(2){
+        @include mixin.box-style(90px, 90px, var.$col-0, 100%);
+        @include mixin.posi(absolute, 25%, 70%,0);
+      }
+    }
+  }
+}
+
+#content-pc{
+  display: none;
+}
+
+.content-item{
+  @for $i from 1 through 4{
+    &>div:nth-child(#{$i}){
+      @include mixin.size(100%, 20%);
+      // border: #000 solid 1px;
+      position: relative;
+
+      &>div:nth-child(1){
+      @include mixin.container-style(85%, 55%, space-around, center );
+      background-color: var.$col-9;
+      padding-left: 10px;
+      z-index: 1;
+
+        &>div:nth-child(1){
+          @include mixin.container-style(45%, 100%, space-around, center, column );
+          position: relative;
+
+          &>img:nth-child(1){
+            @include mixin.box-style(100%, 110%, var.$col-4, 50% 50% 0 0);
+            @include mixin.flex(center, center);
+            border: var.$col-8 solid 1px;
+            @include mixin.posi(absolute, -45%, 0%,1);
+          }
+          
+          &>div:nth-child(2){
+            @include mixin.box-style(80%, 20%, var.$col-0, 50px);
+            @include mixin.flex(center, center);
+            border: var.$col-3 solid 1px;
+            @include mixin.posi(absolute, 75%, 10%,1);
+          }
+        }
+
+        &>div:nth-child(2){
+          @include mixin.container-style(38%, 100%, center, center,column);
+          font-size: 0.85rem;
+
+          &>div:first-child{
+            @include mixin.container-style(100%, 70%, flex-start, center);
+            line-height: 2;
+            // border: #000 1px solid;
+          }
+          
+          &>div:last-child{
+            @include mixin.container-style(100%, 25%, center, center);
+            // border: #000 1px solid;
+            font-weight: 600;
+            color: #174C69;
+
+          }
+        }
+      }
+    }
+  }
+  
+
+}
+
+.content1{
+  @include mixin.container-style(100%, 10%, space-around, center, column );
+  // border: #000 1px solid;
+
+  &>div:first-child{
+    @include mixin.container-style(100%, 50%, space-between, center);
+    background-color: var.$col-0;
+
+    &>div:nth-child(1){
+      @include mixin.container-style(80%, 75%, center, center);
+      // background-color: var.$col-4;
+      background-image: url(https://image.rakuten.co.jp/smartforyou/cabinet/09728902/summer_suncare.jpg);
+      background-size: cover;
+      border-radius: 0 100px 100px 0;
+      @include mixin.posi(relative, 0%, -10%,0);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &>div:nth-child(2){
+      @include mixin.container-style(50%, 75%, space-evenly, center,column);
+      // background-color: #ffffff;
+      @include mixin.posi(relative, 0%, -5%,0);
+
+      &>h3{
+        @include mixin.container-style(98%, 20%, flex-end, center);
+        // background-color: aquamarine;
+        color: #174C69;
+      }
+  
+      &>div{
+        @include mixin.container-style(98%, 70%, center, center);
+        // border: #000 1px solid;
+        text-align: right;
+        font-size: 0.9rem;
+        line-height: 2;
+      }
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(100%, 45%, space-evenly, center);
+
+    &>div:nth-child(1){
+      @include mixin.container-style(50%, 100%, space-evenly, center, column);
+      // background-color: antiquewhite;
+
+      &>div:nth-child(1){
+        @include mixin.box-style(50%, 15%, var.$col-0, 50px);
+        @include mixin.flex(center, center);
+        border: var.$col-3 solid 1px;
+        // margin-bottom: 5px;
+      }
+
+      &>div:nth-child(2){
+        @include mixin.container-style(90%, 70%, center, center, column);
+        // text-align: justify;
+        font-size: 0.85rem;
+
+        &>div:first-child{
+          @include mixin.container-style(100%, 70%, center, center);
+          line-height: 2;
+          text-align: center;
+        }
+
+        &>div:last-child{
+          @include mixin.container-style(100%, 25%, center, center);
+          font-weight: 600;
+          color: #174C69;
+        }
+      }
+    }
+
+    &>img:nth-child(2){
+      @include mixin.box-style(120px, 120px, var.$col-4, 100%);
+      @include mixin.flex(center, center);
+    }
+  }
+}
+
+.content2{
+  @include mixin.container-style(100%, 40%, space-between, center, column);
+
+  &>div:first-child{
+    @include mixin.container-style(100%, 25%, center, center, column);
+    // border: #000 solid 1px;
+
+    &>div:nth-child(1){
+      @include mixin.container-style(100%, 60%, center, flex-start);
+      background-color: var.$col-0;
+
+      &>img{
+        @include mixin.box-style(65%, 90%, var.$col-4, 0 0 50% 50%);
+      }
+    }
+
+    &>div:nth-child(2){
+      @include mixin.container-style(100%, 40%, center, center);
+      background-color:#F3F2E3;
+
+      &>div{
+        @include mixin.container-style(60%, 70%, space-around, center, column );
+        // border: #000 solid 1px;
+  
+        &>h3{
+          @include mixin.container-style(98%, 20%, center, flex-end);
+          // background-color: aliceblue;
+          color: #174C69;
+        }
+  
+        &>div{
+          @include mixin.container-style(98%, 70%, center, flex-start);
+          text-align: center;
+          // border: #000 solid 1px;
+          line-height: 2;
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(100%, 75%, space-evenly, center, column);
+
+    &>div:nth-child(1){
+      @include mixin.flex(flex-end, flex-end,column);
+      
+      &>div:nth-child(1){
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+  
+      &>div:nth-child(2){
+        @include mixin.box-style(90px, 90px, var.$col-0, 100%);
+        @include mixin.posi(absolute, 10%, 20%,0);
+      }
+  
+        &>div:nth-child(3){
+        @include mixin.box-style(70px, 70px, var.$col-0, 100%);
+        @include mixin.posi(absolute, 80%, -10%,0);
+      }
+    }
+  
+    &>div:nth-child(2){
+      @include mixin.flex(flex-end, flex-start,column);
+  
+      &>div:nth-child(1){
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+  
+      &>div:nth-child(2){
+        @include mixin.box-style(180px, 180px, var.$col-0, 100%);
+        @include mixin.posi(absolute, 28%, 45%,0);
+      }
+    }
+  
+    &>div:nth-child(3){
+      @include mixin.flex(flex-end, flex-end,column);
+  
+      &>div:nth-child(1){
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+  
+      &>div:nth-child(2){
+        @include mixin.box-style(120px, 120px, var.$col-0, 100%);
+        @include mixin.posi(absolute, 60%, 2%, 0);
+      }
+  
+    }
+  
+    &>div:nth-child(4){
+      @include mixin.flex(flex-end, flex-start,column);
+  
+      &>div:nth-child(1){
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+  
+      &>div:nth-child(2){
+        @include mixin.box-style(90px, 90px, var.$col-0, 100%);
+        @include mixin.posi(absolute, 25%, 70%,0);
+      }
+    }
+  }
+
+
+}
+
+.content2-pc{
+  display: none;
+}
+
+#item-part2{
+  display: none;
+}
+
+
+

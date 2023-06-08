@@ -1,0 +1,9 @@
+@use './var'as var;
+@use './mixin' as mixin;
+@use './basic';
+// -------------------------------------------
+
+#root{
+  @include mixin.container-style(100vw, 150vh, space-between, center, column );
+  position: relative;
+} 
