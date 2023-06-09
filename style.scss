@@ -1,0 +1,25 @@
+@use './CSS/var' as var;
+@use './CSS/mixin' as mixin;
+@use './CSS/basic';
+
+
+
+#root{
+  @include mixin.container-style(80vw, auto, space-around, center, column );
+  position: relative;
+
+  &>img{
+    @include mixin.size(60%, auto);
+    margin-bottom: 3vh;
+    border: solid 1px var.$col-mid-gray;
+  }
+
+  &>a{
+    @include mixin.container-style(80vw, auto, space-around, center, column );
+
+    &>img{
+      @include mixin.size(60%, auto);
+      border: solid 1px var.$col-mid-gray;
+    }
+  }
+}

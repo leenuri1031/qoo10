@@ -22,10 +22,83 @@
 
 #root {
   width: 100vw;
-  height: 150vh;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+#root > img {
+  margin-bottom: 5vh;
+  z-index: 0;
+  width: 95%;
+  height: auto;
+}
+#root > div {
+  width: 95%;
+  height: auto;
   position: relative;
+}
+
+.sb-bt {
+  position: absolute;
+  top: 1710px;
+  left: 200px;
+  z-index: 100;
+}
+
+.sg-bt {
+  position: absolute;
+  top: 1710px;
+  left: 670px;
+  z-index: 100;
+}
+
+.cm-bt {
+  position: absolute;
+  top: 2165px;
+  left: 85px;
+  z-index: 100;
+}
+
+.aza-bt {
+  position: absolute;
+  top: 2165px;
+  left: 550px;
+  z-index: 100;
+}
+
+.sunc-bt {
+  position: absolute;
+  top: 2660px;
+  left: 200px;
+  z-index: 100;
+}
+
+.mc-bt {
+  position: absolute;
+  top: 4215px;
+  left: 200px;
+  z-index: 100;
+}
+
+.ep-bt {
+  position: absolute;
+  top: 4215px;
+  left: 670px;
+  z-index: 100;
+}
+
+.sebos-bt {
+  position: absolute;
+  top: 4670px;
+  left: 85px;
+  z-index: 100;
+}
+
+.moldc-bt {
+  position: absolute;
+  top: 4670px;
+  left: 550px;
+  z-index: 100;
 }/*# sourceMappingURL=style.css.map */
