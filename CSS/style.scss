@@ -4,489 +4,518 @@
 // -------------------------------------------
 
 #root{
-  @include mixin.container-style(100vw, auto, space-between, center, column );
+  @include mixin.container-style(100vw, auto, center, center, column);
 
   &>img{
-    margin-bottom: 5vh;
-    z-index: 0;
-    @include mixin.size(95%, auto);
+    width: 860px;
+    margin-bottom: 40px;
+  }
+
+  &>a{
+    width: 860px;
+    margin-bottom: 40px;
+
+    &>img{
+      width: 860px;
+    }
+  }
+} 
+.main-top{
+  @include mixin.container-style(860px, 1400px, flex-start, center, column );
+
+  &>img{
+    width: 860px;
+    border: solid 1px #BDBCBC;
+    margin-bottom: 40px
+  }
+
+  &>a{
+    width: 860px;
+    &>img{
+      width: 860px;
+    }
+  }
+}
+
+.skin-care{
+  @include mixin.container-style(860px, 1560px, flex-start, center, column );
+  overflow: hidden;
+  position: relative;
+  // border: solid 2px saddlebrown;
+
+  &>div:first-child{
+    @include mixin.container-style(860px, 12%, center, center);
+    z-index: 1;
+    // background-color: beige;
+
+    &>h3{
+      @include mixin.container-style(20%, 80%, flex-start, center);
+      // border: solid black 1px;
+      font-size: 1.4rem;
+      color: #174C69;
+      letter-spacing: 5px;
+    }
+
+    &>div{
+      @include mixin.container-style(75%, 80%, flex-start, center);
+      line-height: 2.5;
+      font-size: 1.1rem;
+      // border: solid black 1px;
+    }
+  }
+}
+
+.item{
+  @include mixin.container-style(860px, 85%, space-around, center, column );
+  z-index: 2;
+  // border: solid 2px saddlebrown;
+
+  &>div{
+    @include mixin.size(100%, 20%);
+    // border: solid 1px black;
+  }
+  
+    @for $i from 1 through 4{
+      &>div:nth-child(#{$i}){
+        // border: solid 1px black;
+        &>div{
+          @include mixin.container-style(75%, 100%, space-between, center);
+          background-color: var.$col-9;
+          position: relative;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+          &>div{
+            @include mixin.container-style(55%, 100%, space-around, center, column);
+            letter-spacing: 5px;
+    
+            &>div{
+              @include mixin.container-style(100%, 70%, space-around, center, column);
+              // border: solid 1px saddlebrown;
+    
+              &>div:first-child{
+                line-height: 2.5;
+                font-size: 1.1rem;
+              }
+    
+              &>div:last-child{
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #174C69;
+              }
+    
+            }
+    
+            &>a{
+            @include mixin.box-style(40%, 20%,var.$col-0, 50px);
+            @include mixin.flex(center,center);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #174C69;
+            border: var.$col-3 solid 1px;
+            }
+          }
+    
+          &>img{
+            @include mixin.box-style(35%, 100%, var.$col-4, 50% 50% 0 0);
+            border: var.$col-8 solid 2px;
+            @include mixin.posi(relative,-15%, -5%);
+          }
+        }
+      }
+    }
+
+  &>div:nth-child(1){
+    @include mixin.flex(flex-end, center);
+
+    &>div{
+      &>div{
+        &>div{
+          @include mixin.container-style(100%, 70%, space-around, center, column);
+          // border: solid 1px saddlebrown;
+
+          &>div{
+            text-align: right;
+          }
+
+          &>div:first-child{
+            @include mixin.container-style(100%, 60%, flex-end, center);
+          }
+
+          &>div:last-child{
+            @include mixin.container-style(100%, 20%, flex-end, center);
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  &>div:nth-child(2){
+    @include mixin.flex(flex-start, center);
+
+    &>div{
+      &>img{
+        @include mixin.posi(relative,-15%, 5%);
+      }
+
+      &>div{
+        &>div{
+          @include mixin.container-style(100%, 70%, space-around, center, column);
+
+          &>div{
+            text-align: left;
+          }
+
+          &>div:first-child{
+            @include mixin.container-style(100%, 60%, flex-start, center);
+          }
+
+          &>div:last-child{
+            @include mixin.container-style(100%, 20%, flex-start, center);
+          }
+        }
+      }
+    }
+  }
+
+  &>div:nth-child(3){
+    @include mixin.flex(flex-end, center);
+    &>div{
+      &>div{
+        &>div{
+          &>div{
+            text-align: right;
+          }
+
+          &>div:first-child{
+            @include mixin.container-style(100%, 60%, flex-end, center);
+          }
+
+          &>div:last-child{
+            @include mixin.container-style(100%, 20%, flex-end, center);
+          }
+        }
+      }
+    }
+  }
+
+  &>div:nth-child(4){
+    @include mixin.flex(flex-start, center);
+
+    &>div{
+
+      &>img{
+        @include mixin.posi(relative,-15%, 5%);
+      }
+
+      &>div{
+        &>div{
+          &>div{
+            text-align: left;
+          }
+
+          &>div:first-child{
+            @include mixin.container-style(100%, 60%, flex-start, center);
+          }
+
+          &>div:last-child{
+            @include mixin.container-style(100%, 20%, flex-start, center);
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.circle{
+  &>div:nth-child(1){
+    @include mixin.box-style(200px, 200px, var.$col-0,50%);
+    @include mixin.posi(absolute, 4%, 88%,1);
+  }
+  &>div:nth-child(2){
+    @include mixin.box-style(130px, 130px, var.$col-0,50%);
+    @include mixin.posi(absolute, 14%, 11%,0);
+
+  }
+  &>div:nth-child(3){
+    @include mixin.box-style(130px, 130px, var.$col-0,50%);
+    @include mixin.posi(absolute, 32%, 86%,0);
+  }
+  &>div:nth-child(4){
+    @include mixin.box-style(200px, 200px, var.$col-0,50%);
+    @include mixin.posi(absolute, 45%, 61%,0);
+    // border: solid 1px saddlebrown;
+  }
+  &>div:nth-child(5){
+    @include mixin.box-style(180px, 180px, var.$col-0,50%);
+    @include mixin.posi(absolute, 62%, -3%,0);
+  }
+  &>div:nth-child(6){
+    @include mixin.box-style(200px, 200px, var.$col-0,50%);
+    @include mixin.posi(absolute, 85%, 70%, 0);
+  }
+
+}
+
+.sun-care{
+  @include mixin.container-style(860px, 820px, center, center,column);
+  // border: solid black 1px;
+  &>img{
+    width: 860px;
   }
 
   &>div{
-    @include mixin.size(95%, auto);
-    position: relative;
+    @include mixin.container-style(90%, 50%, space-between, center);
+    // border: solid black 1px;
+    letter-spacing: 5px;
+    
+    &>div{
+      @include mixin.container-style(70%, 80%, space-between, center,column);
+
+      &>div{
+        @include mixin.container-style(90%, 80%, space-around, center,column);
+        // background-color: aliceblue;
+
+        &>div:first-child{
+          @include mixin.container-style(90%, 60%, center, center);
+          text-align: center;
+          line-height: 2.5;
+          font-size: 1.1rem;
+        }
+
+        &>div:last-child{
+          @include mixin.container-style(90%, 20%, center, center);
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: #174C69;
+        }
+      }
+
+      &>a{
+        @include mixin.box-style(35%, 18%,var.$col-0, 50px);
+        @include mixin.flex(center,center);
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #174C69;
+        border: var.$col-3 solid 1px;
+      }
+    }
+
+    &>img{
+      @include mixin.size(320px, 320px);
+      border-radius: 50%;
+    }
   }
-} 
-
-.sb-bt{
-  @include mixin.posi(absolute, 1710px, 200px);
 }
 
-.sg-bt{
-  @include mixin.posi(absolute, 1710px, 670px);
-}
-
-.cm-bt{
-  @include mixin.posi(absolute, 2165px, 85px);
+.cleansing{
+  @include mixin.container-style(860px, 2080px, flex-start, center, column );
+  overflow: hidden;
+  position: relative;
 
 }
 
-.aza-bt{
-  @include mixin.posi(absolute, 2165px, 550px);
+.item2{
+  @include mixin.container-style(860px, 1320px, space-around, center, column );
+  // background-color: azure;
+  z-index: 2;
+  // border: solid 2px saddlebrown;
 
-}
-
-.sunc-bt{
-  @include mixin.posi(absolute, 2660px, 200px);
-
-}
-
-.mc-bt{
-  @include mixin.posi(absolute, 4215px,200px);
-
-}
-
-.ep-bt{
-  @include mixin.posi(absolute, 4215px, 670px);
-
-}
-
-.sebos-bt{
-  @include mixin.posi(absolute, 4670px, 85px);
-
-}
-
-.moldc-bt{
-  @include mixin.posi(absolute, 4670px, 550px);
-
-}
-
-// main{
-//   @include mixin.container-style(1080px, 100%, space-around, center, column );
-//   overflow: hidden;
-
-//   &>img{
-//     @include mixin.size(100%, auto);
-//   }
-// }
-
-// #title{
-//   @include mixin.container-style(100%, 12%, center, center, column );
-//   position: relative;
-//   font-size: 1.5rem;
-
-//   &>img{
-//     @include mixin.container-style(100%, 100%, center, center);
-//     mix-blend-mode: multiply;
-//     opacity: 0.6;
-//     @include mixin.posi(absolute,0,0,-1);
-//   }
+  &>div{
+    @include mixin.size(100%, 20%);
+    // border: solid 1px black;
+  }
   
-//   &>div:nth-child(2){
-//     @include mixin.container-style(95%, 55%, space-around, center);
-//     background-color: #ffffff;
-
-//     &>div:nth-child(1){
-//       @include mixin.container-style(40%, 50%, flex-end, center);
-//       @include mixin.posi(relative,-2%,15%,1);
-//       line-height: 2;
-//       // border: solid salmon 1px;
-//     }
-
-//     &>img{
-//       @include mixin.container-style(20%, 85%, center, center);
-//       border-radius: 120px;
-//       @include mixin.posi(relative,10%,5%,1);
-//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     }
-//   }
-
-//   &>div:nth-child(3){
-//     @include mixin.container-style(95%, 40%, space-around, center);
-//     background-color: var.$col-0;
-
-//     &>img{
-//       @include mixin.container-style(25%, 60%, center, center);
-//       border-radius: 150px;
-//       @include mixin.posi(absolute, 30%, 8%,0);
-//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     }
-
-//     &>div:nth-child(2){
-//       @include mixin.container-style(55%, 75%, flex-end, center);
-//       @include mixin.posi(relative,2%,10%,0);
-//       text-align: right;
-//       line-height: 2;
-//       // border: solid 1px salmon;
-//     }
-//   }
-// }
-
-// #content-pc{
-//   @include mixin.container-style(100%, 22%, space-around, center, column);
-//   // background-color: aliceblue;
-
-//   &>div:nth-child(1){
-//     @include mixin.container-style(100%, 15%, space-between, center);
-//     position: relative;
-//     letter-spacing: 5px;
-//     // background-color: beige;
-//     // border: #000 solid 1px;
+    @for $i from 1 through 4{
+      &>div:nth-child(#{$i}){
+        margin-top: 80px;
+        // border: solid 1px black;
+        &>div{
+          @include mixin.container-style(75%, 100%, space-between, center);
+          background-color: var.$col-9;
+          position: relative;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
-//     &>div:nth-child(1){
-//       @include mixin.container-style(80%, 90%, space-between, center, column );
-      
-//       &>h3{
-//         @include mixin.container-style(95%, 30%, flex-start, flex-start);
-//         // background-color: aliceblue;
-//         font-size: 1.6rem;
-//         color: #174C69;
-//       }
-      
-//       &>div{
-//         @include mixin.container-style(94%, 65%, flex-start, center);
-//         line-height: 2.5;
-//         // border: #000 solid 1px;
-//         font-size: 1.2rem;
-//       }
-//     }
-
-//     &>div:nth-child(2){
-//       @include mixin.box-style(200px, 200px, var.$col-0, 100%);
-//       @include mixin.posi(relative, -15%, 5%,0);
-//     }
-//   }
-
-//   &>div:nth-child(2){
-//     @include mixin.container-style(100%, 75%, space-around, center, column);
+          &>div{
+            @include mixin.container-style(55%, 100%, space-around, center, column);
+            letter-spacing: 5px;
     
-//     &>div:nth-child(1){
-//       @include mixin.flex(flex-end, flex-end);
+            &>div{
+              @include mixin.container-style(100%, 70%, space-around, center, column);
+              // border: solid 1px saddlebrown;
+    
+              &>div:first-child{
+                line-height: 2.5;
+                font-size: 1.1rem;
+              }
+    
+              &>div:last-child{
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #174C69;
+              }
+    
+            }
+    
+            &>a{
+            @include mixin.box-style(40%, 20%,var.$col-0, 50px);
+            @include mixin.flex(center,center);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #174C69;
+            border: var.$col-3 solid 1px;
+            }
+          }
+    
+          &>img{
+            @include mixin.box-style(35%, 105%, var.$col-4, 50% 50% 0 0);
+            border: var.$col-8 solid 2px;
+            @include mixin.posi(relative,-15%, -5%);
+          }
+        }
+      }
+    }
 
-//       &>div:nth-child(2){
-//         @include mixin.box-style(200px,200px, var.$col-0, 100%);
-//         @include mixin.posi(absolute, -150%, 80%, 0);
-//       }
+  &>div:nth-child(1){
+    @include mixin.flex(flex-end, center);
 
-//       &>div:nth-child(3){
-//         @include mixin.box-style(180px,180px, var.$col-0, 100%);
-//         @include mixin.posi(absolute, 2%, -5%, 0);
-//       }
+    &>div{
+      &>div{
+        &>div{
+          @include mixin.container-style(100%, 70%, space-around, center, column);
+          // border: solid 1px saddlebrown;
 
-//       &>div:nth-child(4){
-//         @include mixin.box-style(120px,120px, var.$col-0, 100%);
-//         @include mixin.posi(absolute, -35%, 50%, 0);
-//       }
-//     } // => item-part1
+          &>div{
+            text-align: right;
+          }
 
-//     &>div:nth-child(2){
-//       @include mixin.flex(flex-start, flex-end);
-//       position: relative;
+          &>div:first-child{
+            @include mixin.container-style(100%, 60%, flex-end, center);
+          }
 
-//       &>div:nth-child(2){
-//         @include mixin.box-style(180px,180px, var.$col-0, 100%);
-//         @include mixin.posi(absolute, -50%, 23%, 0);
-//       }
+          &>div:last-child{
+            @include mixin.container-style(100%, 20%, flex-end, center);
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 
-//       &>div:nth-child(3){
-//         @include mixin.box-style(180px,180px, var.$col-0, 100%);
-//         @include mixin.posi(absolute, 30%, 74%, 0);
-//       }
+  &>div:nth-child(2){
+    @include mixin.flex(flex-start, center);
 
-//       &>div:nth-child(4){
-//         @include mixin.box-style(100px,100px, var.$col-0, 100%);
-//         @include mixin.posi(absolute, -80%, 70%, 0);
-//       }
-//     } // => item-part2
+    &>div{
+      &>img{
+        @include mixin.posi(relative,-15%, 5%);
+      }
 
-//   }    // => item-part
-// }
+      &>div{
+        &>div{
+          @include mixin.container-style(100%, 70%, space-around, center, column);
 
-// .item-part{
-//   @for $i from 1 through 2{
-//     &>div:nth-child(#{$i}){
-//       @include mixin.size(100%, 25%);
-//       // border: #000 solid 1px;
-//       position: relative;
+          &>div{
+            text-align: left;
+          }
 
-//       &>div:nth-child(1){
-//         @include mixin.container-style(80%, 100%, space-around, center);
-//         // border: #000 solid 1px;
-//         background-color: var.$col-9;
-//         z-index: 1;
-//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          &>div:first-child{
+            @include mixin.container-style(100%, 60%, flex-start, center);
+          }
 
-//         &>div{
-//           @include mixin.container-style(45%, 100%, space-between, center);
+          &>div:last-child{
+            @include mixin.container-style(100%, 20%, flex-start, center);
+          }
+        }
+      }
+    }
+  }
 
+  &>div:nth-child(3){
+    @include mixin.flex(flex-end, center);
+    &>div{
+      &>div{
+        &>div{
+          &>div{
+            text-align: right;
+          }
 
-//           &>div:first-child{
-//             @include mixin.container-style(50%, 100%, space-around, center, column);
-//             position: relative;
-//             // border: #000 solid 1px;
+          &>div:first-child{
+            @include mixin.container-style(100%, 60%, flex-end, center);
+          }
 
-//             &>img:nth-child(1){
-//               @include mixin.box-style(100%, 100%, var.$col-4, 50% 50% 0 0);
-//               @include mixin.flex(center, center);
-//               border: var.$col-8 solid 2px;
-//               @include mixin.posi(absolute, -35%, 0%,1);
-//             }
+          &>div:last-child{
+            @include mixin.container-style(100%, 20%, flex-end, center);
+          }
+        }
+      }
+    }
+  }
 
-//             &>div:nth-child(2){
-//               @include mixin.box-style(80%, 20%, var.$col-0, 50px);
-//               @include mixin.flex(center, center);
-//               border: var.$col-3 solid 1px;
-//               @include mixin.posi(absolute, 75%, 10%,1);
-//               font-weight: 600;
-//               font-size: 1.2rem;
-//             }
-//           }
+  &>div:nth-child(4){
+    @include mixin.flex(flex-start, center);
 
-//           &>div:last-child{
-//             @include mixin.container-style(50%, 100%, space-around, center, column);
-//             letter-spacing: 5px;
+    &>div{
 
-//             &>div:first-child{
-//               @include mixin.container-style(95%, 70%, center, center);
-//               line-height: 2;
-//               // border: #000 1px solid;
-//             }
+      &>img{
+        @include mixin.posi(relative,-15%, 5%);
+      }
 
-//             &>div:last-child{
-//               @include mixin.container-style(95%, 20%, center, flex-start);
-//               // border: #000 1px solid;
-//               font-weight: 600;
-//               color: #174C69;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+      &>div{
+        &>div{
+          &>div{
+            text-align: left;
+          }
 
-// .content1{
-//   @include mixin.container-style(100%, 12%, space-around, center, column );
-//   // border: #000 1px solid;
+          &>div:first-child{
+            @include mixin.container-style(100%, 60%, flex-start, center);
+          }
 
-//   &>div:first-child{
-//     @include mixin.container-style(100%, 45%, space-between, center);
-//     background-color: var.$col-0;
+          &>div:last-child{
+            @include mixin.container-style(100%, 20%, flex-start, center);
+          }
+        }
+      }
+    }
+  }
 
-//     &>div:nth-child(1){
-//       @include mixin.container-style(60%, 75%, center, center);
-//       // background-color: var.$col-4;
-//       background-image: url(https://image.rakuten.co.jp/smartforyou/cabinet/09728902/summer_suncare.jpg);
-//       background-size: cover;
-//       border-radius: 0 120px 120px 0;
-//       @include mixin.posi(relative, 0%, -10%,0);
-//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     }
+}
 
-//     &>div:nth-child(2){
-//       @include mixin.container-style(50%, 75%, space-evenly, center,column);
-//       // background-color: #ffffff;
-//       @include mixin.posi(relative, 0%, -5%,0);
+.circle2{
+  @include mixin.container-style(860px, 1320px, space-around, center, column );
 
-//       &>h3{
-//         @include mixin.container-style(85%, 20%, flex-end, center);
-//         // background-color: aquamarine;
-//         color: #174C69;
-//         font-size: 1.6rem;
-//       }
-  
-//       &>div{
-//         @include mixin.container-style(85%, 80%, flex-end, center);
-//         // background-color: aquamarine;
-//         font-size: 1.2rem;
-//         letter-spacing: 5px;
-//         text-align: right;
-//         line-height: 2;
-//       }
-//     }
-//   }
+  &>div:nth-child(1){
+    @include mixin.box-style(200px, 200px, var.$col-0,50%);
+    @include mixin.posi(absolute, 40%, 10%, 0);
+  }
 
-//   &>div:last-child{
-//     @include mixin.container-style(100%, 45%, space-between, center);
+  &>div:nth-child(2){
+    @include mixin.box-style(130px, 130px, var.$col-0,50%);
+    @include mixin.posi(absolute, 52%, 70%,0);
 
-//     &>div:nth-child(1){
-//       @include mixin.container-style(50%, 100%, space-evenly, center, column);
-//       // background-color: antiquewhite;
+  }
+  &>div:nth-child(3){
+    @include mixin.box-style(130px, 130px, var.$col-0,50%);
+    @include mixin.posi(absolute, 65%, 85%,0);
 
-//       &>div:nth-child(1){
-//         @include mixin.box-style(25%, 15%, var.$col-0, 50px);
-//         @include mixin.flex(center, center);
-//         border: var.$col-3 solid 1px;
-//         margin-bottom: 0;
-//         font-weight: 600;
-//         font-size: 1.5rem;
-//         // margin-bottom: 5px;
-//       }
+  }
+  &>div:nth-child(4){
+    @include mixin.box-style(200px, 200px, var.$col-0,50%);
+    @include mixin.posi(absolute, 72%, -5%,0);
 
-//       &>div:nth-child(2){
-//         @include mixin.container-style(50%, 70%, center, center, column);
-//         // font-size: 0.85rem;
-        
-//         &>div:first-child{
-//           @include mixin.container-style(100%, 70%, center, center);
-//           // background-color: antiquewhite;
-//           line-height: 2;
-//           text-align: center;
-//         }
+    // border: solid 1px saddlebrown;
+  }
+  &>div:nth-child(5){
+    @include mixin.box-style(180px, 180px, var.$col-0,50%);
+    @include mixin.posi(absolute, 80%, 60%,0);
+  }
+  &>div:nth-child(6){
+    @include mixin.box-style(100px, 100px, var.$col-0,50%);
+    @include mixin.posi(absolute, 92%,85%,0);
 
-//         &>div:last-child{
-//           @include mixin.container-style(100%, 25%, center, center);
-//           font-weight: 600;
-//           color: #174C69;
-//         }
-//       }
-//     }
+  }
 
-//     &>img:nth-child(2){
-//       @include mixin.box-style(280px, 280px, var.$col-4, 100%);
-//       margin-right: 200px;
-//     }
-//   }
-// }
+}
 
-// .content2{
-//   @include mixin.container-style(100%, 12%, space-between, center, column);
-//   // background-color: aliceblue;
-//     // background-color:#F3F2E3;
-//     // border: solid 2px black;
-
-//   &>div:first-child{
-//     @include mixin.container-style(100%, 70%, center, flex-start);
-//     background-color: var.$col-0;
-
-//     &>img{
-//       @include mixin.box-style(40%, 95%, var.$col-4, 0 0 50% 50%);
-//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     }
-//   }
-
-//   &>div:last-child{
-//     @include mixin.container-style(100%, 30%, center, center, column);
-//     background-color:#F3F2E3;
-
-//     &>h2{
-//       @include mixin.container-style(60%, 20%, center, center);
-//       color: #174C69;
-//     }
-
-//     &>div{
-//       @include mixin.container-style(80%, 70%, center, center);
-//       text-align: center;
-//       // border: #2c2c2c solid 1px;
-//       font-size: 1.2rem;
-//       line-height: 2;
-//       letter-spacing: 5px;
-//     }
-//   }
-// }
-
-// #item-part2{
-//   @include mixin.container-style(100%, 18%, space-around, center, column);
-//   // background-color: #F3F2E3;
-
-//   &>div:nth-child(1){
-//     @include mixin.flex(flex-end, flex-end);
-
-//     &>div:nth-child(2){
-//       @include mixin.box-style(100px,100px, var.$col-0, 100%);
-//       @include mixin.posi(absolute, 105%, 80%, 0);
-//     }
-
-//     &>div:nth-child(3){
-//       @include mixin.box-style(180px,180px, var.$col-0, 100%);
-//       @include mixin.posi(absolute, 2%, -5%, 0);
-//     }
-
-//     &>div:nth-child(4){
-//       @include mixin.box-style(120px,120px, var.$col-0, 100%);
-//       @include mixin.posi(absolute, -35%, 50%, 0);
-//     }
-//   } // => item-part1
-
-//   &>div:nth-child(2){
-//     @include mixin.flex(flex-start, flex-end);
-//     position: relative;
-
-//     &>div:nth-child(2){
-//       @include mixin.box-style(180px,180px, var.$col-0, 100%);
-//       @include mixin.posi(absolute, -50%, 23%, 0);
-//     }
-
-//     &>div:nth-child(3){
-//       @include mixin.box-style(180px,180px, var.$col-0, 100%);
-//       @include mixin.posi(absolute, 60%, 74%, 0);
-//     }
-
-//     &>div:nth-child(4){
-//       @include mixin.box-style(100px,100px, var.$col-0, 100%);
-//       @include mixin.posi(absolute, 90%, 5%, 0);
-//     }
-
-//   } // => item-part2
-  
-//   @for $i from 1 through 2{
-//     &>div:nth-child(#{$i}){
-//       @include mixin.size(100%, 25%);
-//       // border: #000 solid 1px;
-//       position: relative;
-
-//       &>div:nth-child(1){
-//         @include mixin.container-style(80%, 100%, space-around, center);
-//         // border: #000 solid 1px;
-//         background-color: var.$col-9;
-//         z-index: 1;
-//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-//         &>div{
-//           @include mixin.container-style(45%, 100%, space-around, center);
-
-//           &>div:first-child{
-//             @include mixin.container-style(50%, 100%, space-around, center, column);
-//             position: relative;
-
-//             &>img:nth-child(1){
-//               @include mixin.box-style(100%, 100%, var.$col-4, 50% 50% 0 0);
-//               @include mixin.flex(center, center);
-//               border: var.$col-8 solid 2px;
-//               @include mixin.posi(absolute, -35%, 0%,1);
-//             }
-
-//             &>div:nth-child(2){
-//               @include mixin.box-style(80%, 20%, var.$col-0, 50px);
-//               @include mixin.flex(center, center);
-//               border: var.$col-3 solid 1px;
-//               @include mixin.posi(absolute, 75%, 10%,1);
-//               font-weight: 600;
-//               font-size: 1.2rem;
-//             }
-//           }
-
-//           &>div:last-child{
-//             @include mixin.container-style(50%, 100%, space-around, center, column);
-//             letter-spacing: 3px;
-
-//             &>div:first-child{
-//               @include mixin.container-style(95%, 70%, center, center);
-//               line-height: 2;
-//               // border: #000 1px solid;
-//             }
-
-//             &>div:last-child{
-//               @include mixin.container-style(95%, 20%, center, flex-start);
-//               // border: #000 1px solid;
-//               font-weight: 600;
-//               color: #174C69;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 
 
