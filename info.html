@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Sawarabi+Gothic&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+* a {
+  color: #444444;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* {
+  font-family: "M PLUS 1", sans-serif;
+}
+    /* #root {
+  width: 820px;
+  height: 3560px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #444444;
+}
+#root > div {
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+}
+#root > div:first-child {
+  width: 820px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FAFAFA;
+}
+#root > div:first-child > h1 {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:first-child > h3 {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.company {
+  width: 820px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.company > div:first-child {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.company > div:first-child > h3 {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 5px;
+}
+.company > div:last-child {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.company > div:last-child > div:nth-child(1) {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.company > div:last-child > div:nth-child(1) > h3 {
+  width: 95%;
+  height: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 3px;
+}
+.company > div:last-child > div:nth-child(1) > div {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  line-height: 1.8;
+}
+.company > div:last-child > div:nth-child(2) {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.company > div:last-child > div:nth-child(2) > h3 {
+  width: 95%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 3px;
+}
+.company > div:last-child > div:nth-child(2) > div {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.delivery {
+  width: 820px;
+  height: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.delivery > div:first-child {
+  width: 100%;
+  height: 31%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.delivery > div:first-child > div:nth-child(1) {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.delivery > div:first-child > div:nth-child(1) > h3 {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 5px;
+}
+.delivery > div:first-child > div:last-child {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.delivery > div:first-child > div:last-child > div:nth-child(1) {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.delivery > div:first-child > div:last-child > div:nth-child(1) > h3 {
+  width: 95%;
+  height: 18%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 3px;
+}
+.delivery > div:first-child > div:last-child > div:nth-child(1) > div {
+  width: 95%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.delivery > div:first-child > div:last-child > div:nth-child(2) {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.delivery > div:first-child > div:last-child > div:nth-child(2) > h3 {
+  width: 95%;
+  height: 18%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 3px;
+}
+.delivery > div:first-child > div:last-child > div:nth-child(2) > div {
+  width: 95%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.delivery > div:first-child > div:last-child > div:nth-child(3) {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.delivery > div:first-child > div:last-child > div:nth-child(3) > h3 {
+  width: 95%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.delivery > div:first-child > div:last-child > div:nth-child(3) > div {
+  width: 90%;
+  height: 75%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+.delivery > div:last-child {
+  width: 100%;
+  height: 64%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-top: double 6px #c2c2c2;
+}
+.delivery > div:last-child > h3 {
+  width: 80%;
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 3px;
+}
+.delivery > div:last-child > div:nth-child(2) {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.delivery > div:last-child > div:nth-child(2) > div {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.delivery > div:last-child > div:nth-child(2) > div > h3 {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 5px;
+}
+.delivery > div:last-child > div:nth-child(2) > a {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.delivery > div:last-child > div:nth-child(3) {
+  width: 98%;
+  height: 55%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.delivery > div:last-child > div:nth-child(3) > div {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.delivery > div:last-child > div:nth-child(3) > div > div {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.delivery > div:last-child > div:nth-child(3) > div > div > img {
+  width: 90%;
+  height: auto;
+}
+.delivery > div:last-child > div:nth-child(3) > div > div > div {
+  width: 95%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 2;
+}
+.delivery > div:last-child > div:nth-child(3) > h4 {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+}
+
+.refund {
+  width: 820px;
+  height: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.refund > div:first-child {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.refund > div:first-child > h3 {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 5px;
+  line-height: 2;
+}
+.refund > div:last-child {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.refund > div:last-child > div {
+  position: relative;
+}
+.refund > div:last-child > div:nth-child(1) {
+  width: 100%;
+  height: 32%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.refund > div:last-child > div:nth-child(1) > h3 {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.refund > div:last-child > div:nth-child(1) > div:nth-child(2) {
+  width: 92%;
+  height: 85%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 2;
+  z-index: 2;
+}
+.refund > div:last-child > div:nth-child(1) > div:nth-child(3) {
+  width: 95%;
+  height: 5%;
+  background-color: rgba(253, 255, 172, 0.55);
+  border-radius: 0;
+  position: absolute;
+  top: 45%;
+  left: 2%;
+  z-index: 0;
+}
+.refund > div:last-child > div:nth-child(1) > div:nth-child(4) {
+  width: 45%;
+  height: 5%;
+  background-color: rgba(253, 255, 172, 0.55);
+  border-radius: 0;
+  position: absolute;
+  top: 56%;
+  left: 2%;
+  z-index: 0;
+}
+.refund > div:last-child > div:nth-child(2) {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.refund > div:last-child > div:nth-child(2) > h3 {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.refund > div:last-child > div:nth-child(2) > div:nth-child(2) {
+  width: 92%;
+  height: 85%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 2;
+  z-index: 2;
+}
+.refund > div:last-child > div:nth-child(2) > div:nth-child(3) {
+  width: 55%;
+  height: 5%;
+  background-color: rgba(253, 255, 172, 0.55);
+  border-radius: 0;
+  position: absolute;
+  top: 21%;
+  left: 26%;
+  z-index: 0;
+}
+.refund > div:last-child > div:nth-child(2) > div:nth-child(4) {
+  width: 95%;
+  height: 5%;
+  background-color: rgba(253, 255, 172, 0.55);
+  border-radius: 0;
+  position: absolute;
+  top: 41%;
+  left: 2%;
+  z-index: 0;
+}
+.refund > div:last-child > div:nth-child(2) > div:nth-child(5) {
+  width: 62%;
+  height: 5%;
+  background-color: rgba(253, 255, 172, 0.55);
+  border-radius: 0;
+  position: absolute;
+  top: 51%;
+  left: 2%;
+  z-index: 0;
+}
+.refund > div:last-child > div:nth-child(3) {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.refund > div:last-child > div:nth-child(3) > h3 {
+  width: 95%;
+  height: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.refund > div:last-child > div:nth-child(3) > div {
+  width: 92%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.qa {
+  width: 820px;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.qa > div:first-child {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.qa > div:first-child > h3 {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 5px;
+}
+.qa > div:last-child {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.qa > div:last-child > div > div {
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+.qa > div:last-child > div:nth-child(1) {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.qa > div:last-child > div:nth-child(1) > div:first-child {
+  width: 95%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.qa > div:last-child > div:nth-child(1) > div:last-child {
+  width: 95%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.qa > div:last-child > div:nth-child(2) {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.qa > div:last-child > div:nth-child(2) > div:first-child {
+  width: 95%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.qa > div:last-child > div:nth-child(2) > div:last-child {
+  width: 95%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.qa > div:last-child > div:nth-child(3) {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.qa > div:last-child > div:nth-child(3) > div:first-child {
+  width: 95%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.qa > div:last-child > div:nth-child(3) > div:last-child {
+  width: 95%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.qa > div:last-child > div:nth-child(4) {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.qa > div:last-child > div:nth-child(4) > div:first-child {
+  width: 95%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.qa > div:last-child > div:nth-child(4) > div:last-child {
+  width: 95%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.qa > div:last-child > div:nth-child(5) {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.qa > div:last-child > div:nth-child(5) > div:first-child {
+  width: 95%;
+  height: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.qa > div:last-child > div:nth-child(5) > div:last-child {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+} */
+  </style>
+</head>
+<body>
+  <div style=" width: 100vw; height: 3560px; display: flex; justify-content: space-around; align-items: center; flex-direction: column; color: #444444;">
+    <div style="  width: 820px; height: 200px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #FAFAFA;  border-top: 1px solid #c2c2c2; border-bottom: 1px solid #c2c2c2;">
+      <h1 style="  width: 80%; height: 40%; display: flex; justify-content: center; align-items: center; flex-direction: row;">SHOPPING GUID</h1>
+      <h3 style="  width: 80%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;">ショッピングガイド</h3>
+    </div>
+
+    <div class="company" style="  width: 820px; height: 300px; display: flex; justify-content: space-between; align-items: center; flex-direction: row;   border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;">
+      <div style="  width: 25%; height: 100%; display: flex; justify-content: space-evenly; align-items: center; flex-direction: column;">
+        <img src="https://askin-jp.com/wp-content/uploads/2023/06/company_pc_2.jpg">
+        <h3 style="  width: 80%; height: 20%; display: flex; justify-content: center; align-items: center; flex-direction: row; letter-spacing: 5px;">会社概要</h3>
+      </div>
+      <div style="  width: 70%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div style="  width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;">
+          <h3 style="  width: 95%;
+          height: 15%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          letter-spacing: 3px;">[会社名・住所]</h3>
+          <div style="  width: 90%;
+          height: 80%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          font-weight: 600;
+          line-height: 1.8;">
+            ヒューマンコスメティック Co., Ltd. ASKIN (エースキン)<br>
+            〒35383<br> 
+            1F, 23-67 Gwanjeonam-ro 25beon-gil, Seo-gu, Daejeon, Korea<br>
+            代表者 : 李 洪九(イ・ホング)
+          </div>
+        </div>
+        <div style="  width: 100%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;">
+          <h3 style="  width: 95%;
+          height: 20%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          letter-spacing: 3px;">[店舗連絡先・問い合わせ先]</h3>
+          <div style="  width: 90%;
+          height: 70%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          font-weight: 600;
+          line-height: 1.8;">
+            E-mail : askin140702@gmail.com<br>
+            TEL : +82.42.545.8763  FAX : +82.42.367.0315
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery" style="width: 820px;
+    height: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;   border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;">
+      <div style="  width: 100%;
+      height: 31%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;">
+        <div style="  width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;">
+          <img src="https://askin-jp.com/wp-content/uploads/2023/06/delivery_pc.jpg">
+          <h3 style="  width: 80%;
+          height: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          letter-spacing: 5px;">配送案内</h3>
+        </div>
+
+        <div style="  width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;">
+          <div style="  width: 100%;
+          height: 18%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;">
+            <h3 style="  width: 95%;
+            height: 18%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            letter-spacing: 3px;">[送料]</h3>
+            <div style="  width: 95%;
+            height: 60%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 1.5;">
+              全品送料無料。1品からでも送料無料でお届けします。
+            </div>
+          </div>
+
+          <div style="  width: 100%;
+          height: 18%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;">
+            <h3 style="  width: 95%;
+            height: 18%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            letter-spacing: 3px;">[運送会社]</h3>
+            <div style="  width: 95%;
+            height: 60%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 1.5;">
+              STOO + 佐川宅急便 
+            </div>
+          </div>
+
+          <div style="  width: 100%;
+          height: 50%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;">
+            <h3 style="  width: 95%;
+            height: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;">[平均お届け日数]</h3>
+            <div style="  width: 90%;
+            height: 75%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 1.8;">
+              ASKINは韓国のブランドのため全商品韓国から発送する国際<br>発送になっております。商品発送後配送まで7~10日程度かかり<br>ますのでご了承ください。(荒天や災害などにより平均お届け<br>日数よりもっと遅れる可能性がございます。)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="  width: 100%;
+      height: 64%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      border-top: double 6px #c2c2c2;">
+        <h3 style="  width: 80%;
+        height: 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        letter-spacing: 3px;">[配送追跡案内]</h3>
+
+        <div style="  width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;">
+          <div style="  width: 25%;
+          height: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;">
+            <img src="https://askin-jp.com/wp-content/uploads/2023/06/track_pc.jpg">
+            <h3 style="  width: 80%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            letter-spacing: 5px;">追跡リンク</h3>
+          </div>
+          <a style="  width: 65%;
+          height: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          font-weight: 600;
+          letter-spacing: 3px;" href="https://cbt.sttd.kr/Track/Search">https://cbt.sttd.kr/Track/Search</a>
+        </div>
+
+        <div style="  width: 98%;
+        height: 55%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;">
+          <div style="  width: 100%;
+          height: 90%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row;">
+            <div style="  width: 32%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;">
+              <img style="  width: 90%; height: auto;" src="https://askin-jp.com/wp-content/uploads/2023/06/traccking_1.jpg">
+              <div style="  width: 95%;
+              height: 30%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row;
+              font-weight: 600;
+              letter-spacing: 2px;
+              text-align: center;
+              line-height: 2;">
+                上記の配送追跡リンクを<br>クリックし、配送追跡<br>ページに移動します。
+              </div>
+            </div>
+            <div style="width: 32%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;">
+              <img style="  width: 90%; height: auto;" src="https://askin-jp.com/wp-content/uploads/2023/06/traccking_2.jpg" >
+              <div style="  width: 95%;
+              height: 30%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row;
+              font-weight: 600;
+              letter-spacing: 2px;
+              text-align: center;
+              line-height: 2;">
+                言語が日本語ではない場合<br>languageをクリックし、<br>言語を日本語に変更します。
+              </div>
+            </div>
+            <div style="width: 32%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;">
+              <img style="  width: 90%; height: auto;" src="https://askin-jp.com/wp-content/uploads/2023/06/traccking_3.jpg">
+              <div style="  width: 95%;
+              height: 30%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row;
+              font-weight: 600;
+              letter-spacing: 2px;
+              text-align: center;
+              line-height: 2;">
+                メールでお送りした注文番号<br>やお荷物伝票番号などを<br>入力し、検索してください。
+              </div>
+            </div>
+          </div>
+          
+          <h4 style="  width: 95%;
+          height: 10%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          flex-direction: row;
+          font-size: 1.1rem;
+          letter-spacing: 3px;">
+            * 荷物伝票番号で検索する場合到着国の送り状番号を選択後検索お願いします。
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="refund" style="width: 820px;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;">
+      <div style="  width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;">
+        <img src="https://askin-jp.com/wp-content/uploads/2023/06/refund_pc.jpg">
+        <h3 style="  width: 80%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        letter-spacing: 5px;
+        line-height: 2;">キャンセル・<br>返品・交換</h3>
+      </div>
+
+      <div style="  width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;">
+        <div style="  width: 100%;
+        height: 32%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column; position: relative;">
+          <h3 style="  width: 95%;
+          height: 10%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">[お客様都合によるキャンセル・返品・交換]</h3>
+          <div style="  width: 95%;
+          height: 85%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          font-weight: 600;
+          letter-spacing: 2px;
+          line-height: 2;
+          z-index: 2;">
+            購入履歴ページで「入金待ち」「商品準備中」「配送要請」と<br>
+            表示されている場合、注文をキャンセルすることができます。<br>
+            「配送中」や「発送予定日」が表示されている場合のキャンセルは<br>
+            一切受け付けておりません。<br>
+            ※ 御注文ミスによる返品はお断りいたしますので御注文の際<br>
+            &nbsp;&nbsp;&nbsp;間違いがないかご確認お願いします。<br>
+            ※ 当店ではお客様都合による交換、返品は受け付けておりません。
+          </div>
+          <div style="  width: 95%;
+          height: 5%;
+          background-color: rgba(253, 255, 172, 0.55);
+          border-radius: 0;
+          position: absolute;
+          top: 44%;
+          left: 2%;
+          z-index: 0;"></div>
+          <div style="  width: 45%;
+          height: 5%;
+          background-color: rgba(253, 255, 172, 0.55);
+          border-radius: 0;
+          position: absolute;
+          top: 56%;
+          left: 2%;
+          z-index: 0;"></div>
+        </div>
+
+        <div style="  width: 100%;
+        height: 35%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column; position: relative;">
+          <h3  style="  width: 95%;
+          height: 10%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">[発送ミス・初期不良による返品・交換]</h3>
+          <div style="  width: 95%;
+          height: 85%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          font-weight: 600;
+          letter-spacing: 2px;
+          line-height: 2;
+          z-index: 2;">
+            初期不良の場合、商品到着後7日以内にご連絡ください。その後の<br>
+            商品は初期不良対象外となりますのでご了承ください。<br>※ 交換前に必ず交換窓口よりご連絡く ださい連絡なしで交換され<br>&nbsp;&nbsp;&nbsp;た場合はお受けできない場合がございます。<br>※ 返品・交換の受付するためには配送時の箱・送り状・商品・<br>&nbsp;&nbsp;&nbsp;おまけなど必要となります。いずれか足りない場合、ご対応が<br>&nbsp;&nbsp;&nbsp;できなくなる可能性がございますので必ず、配送時の状態のまま<br>&nbsp;&nbsp;&nbsp;保管をお願い申し上げます。
+          </div>
+          <div style="  width: 55%;
+          height: 5%;
+          background-color: rgba(253, 255, 172, 0.55);
+          border-radius: 0;
+          position: absolute;
+          top: 21%;
+          left: 26%;
+          z-index: 0;"></div>
+          <div style="  width: 95%;
+          height: 5%;
+          background-color: rgba(253, 255, 172, 0.55);
+          border-radius: 0;
+          position: absolute;
+          top: 41%;
+          left: 2%;
+          z-index: 0;"></div>
+          <div style="  width: 65%;
+          height: 5%;
+          background-color: rgba(253, 255, 172, 0.55);
+          border-radius: 0;
+          position: absolute;
+          top: 51%;
+          left: 2%;
+          z-index: 0;"></div>
+        </div>
+
+        <div style="  width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;">
+          <h3 style="  width: 95%;
+          height: 15%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">[長期不在・受取拒否]</h3>
+          <div style="  width: 92%;
+          height: 80%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          font-weight: 600;
+          letter-spacing: 2px;
+          line-height: 2;">
+            商品発送後の長期不在・受取拒否等により商品が返送された<br>場合、商品のキャンスルならびに往復送料をご請求させていただ<br>く恐れがございます。また、今後の代引きでの発送がお受けでき<br>なくなりますのでご注意下さい。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa" style="  width: 820px;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;">
+      <div style="  width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;">
+        <img src="https://askin-jp.com/wp-content/uploads/2023/06/qa_pc.jpg">
+        <h3 style="  width: 80%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        letter-spacing: 5px;">よくある質問</h3>
+      </div>
+
+      <div style="  width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;">
+        <div style="  font-weight: 600;
+        letter-spacing: 3px;
+        line-height: 1.8;   width: 100%;
+  height: 13%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;">
+          <div style="  width: 95%;
+          height: 20%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">
+            [Q] 製品の消費期限はどうなりますか?
+          </div>
+          <div style="  width: 95%;
+          height: 60%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">
+            [A] 別途に表記された製造日付から3年間です。商品に異常が<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ある場合、返品問い合わせまでご連絡お願いします。
+            </div>
+        </div>
+        <div style="font-weight: 600;
+        letter-spacing: 3px;
+        line-height: 1.8;   width: 100%;
+  height: 16%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;">
+          <div style="  width: 95%;
+          height: 20%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">
+            [Q] 妊婦も使っても大丈夫ですか?
+          </div>
+          <div style="  width: 95%;
+          height: 60%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">
+            [A] ASKINのすべての製品は低刺激成分のみ使っておりま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;す。ただ、ホルモンの不均衡など敏感な時期には専門家<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;との相談後の使用をおすすめします。
+            </div>
+        </div>
+        <div style="font-weight: 600;
+        letter-spacing: 3px;
+        line-height: 1.8;   width: 100%;
+  height: 13%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;">
+          <div style="  width: 95%;
+          height: 20%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">
+            [Q] 製品のpHはどのぐらいですか?
+          </div>
+          <div style="  width: 95%;
+          height: 60%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">
+            [A] ASKINのすべての製品は肌の最適な環境のための弱酸性<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(pH 4.5 ~ 5.5)を維持しております。
+            </div>
+        </div>
+        <div style="font-weight: 600;
+        letter-spacing: 3px;
+        line-height: 1.8;   width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;">
+          <div style="  width: 95%;
+          height: 20%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">
+            [Q] 製品にステロイドが入っていますか?
+          </div>
+          <div style="  width: 95%;
+          height: 60%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">
+            [A] ASKINの全品は低刺激テスト済みの製品で、自然由来の<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成分など安定性がある原料のみ使用しております。
+            </div>
+        </div>
+        <div style="font-weight: 600;
+        letter-spacing: 3px;
+        line-height: 1.8;   width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;">
+          <div style="  width: 95%;
+          height: 22%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">
+            [Q] 製品注文後、いつ配送されますか?
+          </div>
+          <div style="  width: 95%;
+          height: 70%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;">
+            [A] 商品はご注文確認後1~2日以内に発送いたしますが、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASKINは韓国ブランドのため全品国際配送になっており<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ます。平均的にお届けまで7~10日程度かかりますが、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荒天や災害などの影響がある場合平均お届け日数より<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;もっと遅れる可能性がございます。ご了承くださいませ。
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
