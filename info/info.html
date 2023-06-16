@@ -383,10 +383,20 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .delivery > div:last-child > div:nth-child(3) > div > div > img {
   width: 90%;
   height: auto;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+.delivery > div:last-child > div:nth-child(3) > div > div > img:hover {
+  transform: scale(2);
+  position: relative;
+  top: 0;
+  left: 5%;
+  z-index: 100;
 }
 .delivery > div:last-child > div:nth-child(3) > div > div > div {
   width: 100%;
@@ -756,6 +766,7 @@
   flex-direction: row;
 }/*# sourceMappingURL=style.css.map */
   </style>
+
 </head>
 <body>
   <div id="root">

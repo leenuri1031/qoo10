@@ -375,10 +375,20 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .delivery > div:last-child > div:nth-child(3) > div > div > img {
   width: 90%;
   height: auto;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.delivery > div:last-child > div:nth-child(3) > div > div > img:hover {
+  transform: scale(2);
+  position: relative;
+  top: 0;
+  left: 5%;
+  z-index: 100;
 }
 .delivery > div:last-child > div:nth-child(3) > div > div > div {
   width: 100%;

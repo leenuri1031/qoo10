@@ -395,7 +395,10 @@
 .track > div:nth-child(3) > div:first-child > div > img {
   width: 100px;
   height: auto;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
 }
+
 .track > div:nth-child(3) > div:first-child > div > div {
   width: 100%;
   height: 35%;
@@ -859,21 +862,21 @@
       <div>
         <div>
           <div>
-            <img src="https://askin-jp.com/wp-content/uploads/2023/06/stoo_mb_1.jpg">
+            <img class="track-img" src="https://askin-jp.com/wp-content/uploads/2023/06/stoo_mb_1.jpg">
             <div>
               上記のリンクを<br>クリックし、<br>配送追跡ページ<br>に移動します。
             </div>
           </div>
 
           <div>
-            <img src="https://askin-jp.com/wp-content/uploads/2023/06/stoo_mb_2.jpg" >
+            <img class="track-img" src="https://askin-jp.com/wp-content/uploads/2023/06/stoo_mb_2.jpg" >
             <div>
               言語が日本語<br>ではない場合、<br>右上のlanguage<br>から変更します。
             </div>
           </div>
 
           <div>
-            <img src="https://askin-jp.com/wp-content/uploads/2023/06/stoo_mb_3.jpg">
+            <img class="track-img" src="https://askin-jp.com/wp-content/uploads/2023/06/stoo_mb_3.jpg">
             <div>
               注文番号や<br>お荷物伝票番号<br>などを入力し、<br>検索して下さい。
             </div>
@@ -983,7 +986,29 @@
 
       </div>
     </div>
-
   </div>
+<!-- 
+  <script>
+    const trackImg = document.getElementsByClassName('track-img');
+    console.log(trackImg);
+    let boolean = true;
+    function touch(target, scale, posi, left = 0,top = 0, zIndex = 0){
+      target.style.webkitTransform = scale;
+      target.style.position = posi;
+      target.style.left = left;
+      target.style.top = top;
+      target.style.zIndex = zIndex;
+    }
+    trackImg[0].addEventListener('mouseover', (e)=>{
+      console.log('event');
+      touch(trackImg[0], 'scale(2)', 'relative', 0, 0, 5);
+      boolean === false;
+    });
+
+    trackImg[0].addEventListener('mouseout', (e)=>{
+        console.log('eventout');
+        touch(trackImg[0], 'scale(1)', 'relative', 0, 0, 0);
+      });
+  </script> -->
 </body>
 </html>

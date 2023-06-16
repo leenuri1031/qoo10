@@ -214,10 +214,19 @@
 
         &>div{ 
           @include mixin.container-style(32%, 100%, space-around, center, column);
+          position: relative;
           // border: solid salmon 1px;
           
           &>img{
             @include mixin.size(90%, auto);
+            // border: solid salmon 1px;
+            transform: scale(1);
+            transition: .5s ;
+          }
+
+          &>img:hover{
+            transform: scale(2);
+            @include mixin.posi(relative,0,5%)
           }
 
           &>div{
