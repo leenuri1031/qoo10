@@ -30,9 +30,9 @@
 
 #root {
   width: 100vw;
-  height: 3200px;
+  height: auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #444444;
@@ -368,7 +368,7 @@
   font-weight: 600;
 }
 .track > div:nth-child(3) {
-  width: 95%;
+  width: 90%;
   height: 70%;
   display: flex;
   justify-content: space-around;
@@ -387,7 +387,7 @@
   width: 32%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   position: relative;
@@ -395,13 +395,10 @@
 .track > div:nth-child(3) > div:first-child > div > img {
   width: 100px;
   height: auto;
-  transform: scale(1);
-  transition: 0.5s ease-in-out;
 }
-
 .track > div:nth-child(3) > div:first-child > div > div {
   width: 100%;
-  height: 35%;
+  height: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,7 +420,7 @@
 
 .refund {
   width: 100%;
-  height: 960px;
+  height: 1120px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -458,35 +455,37 @@
 }
 .refund > div:last-child > div {
   position: relative;
+  padding-left: 5px;
 }
 .refund > div:last-child > div > div:nth-child(1) {
   font-weight: 700;
+  font-size: 1rem;
 }
 .refund > div:last-child > div > div:nth-child(2) {
   font-size: 0.87rem;
   font-weight: 600;
-  line-height: 1.8;
+  line-height: 2;
   z-index: 2;
   text-align: justify;
 }
 .refund > div:last-child > div:nth-child(1) {
   width: 100%;
-  height: 35%;
+  height: 34%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-direction: column;
 }
 .refund > div:last-child > div:nth-child(1) > div:nth-child(1) {
   width: 95%;
-  height: 10%;
+  height: 11%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
 .refund > div:last-child > div:nth-child(1) > div:nth-child(2) {
-  width: 95%;
+  width: 92%;
   height: 85%;
   display: flex;
   justify-content: flex-start;
@@ -494,41 +493,41 @@
   flex-direction: row;
 }
 .refund > div:last-child > div:nth-child(1) > div:nth-child(3) {
-  width: 95%;
+  width: 92%;
   height: 4%;
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 40%;
+  top: 42%;
   left: 0%;
   z-index: 0;
 }
 .refund > div:last-child > div:nth-child(1) > div:nth-child(4) {
-  width: 95%;
+  width: 92%;
   height: 4%;
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 48%;
+  top: 50%;
   left: 0%;
   z-index: 0;
 }
 .refund > div:last-child > div:nth-child(1) > div:nth-child(5) {
-  width: 25%;
+  width: 45%;
   height: 4%;
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 55%;
+  top: 58%;
   left: 0%;
   z-index: 0;
 }
 .refund > div:last-child > div:nth-child(2) {
   width: 100%;
-  height: 40%;
+  height: 36%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-direction: column;
 }
 .refund > div:last-child > div:nth-child(2) > div:nth-child(1) {
@@ -554,7 +553,7 @@
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 23%;
+  top: 18.5%;
   left: 38%;
   z-index: 0;
 }
@@ -564,7 +563,7 @@
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 31%;
+  top: 25%;
   left: 0%;
   z-index: 0;
 }
@@ -574,7 +573,7 @@
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 38%;
+  top: 40%;
   left: 0%;
   z-index: 0;
 }
@@ -584,7 +583,7 @@
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 45%;
+  top: 46%;
   left: 0%;
   z-index: 0;
 }
@@ -600,15 +599,15 @@
 }
 .refund > div:last-child > div:nth-child(3) {
   width: 100%;
-  height: 20%;
+  height: 22%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 .refund > div:last-child > div:nth-child(3) > div:nth-child(1) {
   width: 95%;
-  height: 15%;
+  height: 17%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -625,7 +624,7 @@
 
 .qa {
   width: 100%;
-  height: 880px;
+  height: 1000px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -665,7 +664,7 @@
 }
 .qa > div:last-child > div:nth-child(1) {
   width: 100%;
-  height: 18%;
+  height: 15%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -680,7 +679,7 @@
   flex-direction: row;
 }
 .qa > div:last-child > div:nth-child(1) > div:last-child {
-  width: 95%;
+  width: 92%;
   height: 75%;
   display: flex;
   justify-content: flex-start;
@@ -697,15 +696,15 @@
 }
 .qa > div:last-child > div:nth-child(2) > div:first-child {
   width: 95%;
-  height: 20%;
+  height: 16.5%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
 .qa > div:last-child > div:nth-child(2) > div:last-child {
-  width: 95%;
-  height: 75%;
+  width: 92%;
+  height: 78%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -713,7 +712,7 @@
 }
 .qa > div:last-child > div:nth-child(3) {
   width: 100%;
-  height: 15%;
+  height: 13%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -721,15 +720,15 @@
 }
 .qa > div:last-child > div:nth-child(3) > div:first-child {
   width: 95%;
-  height: 20%;
+  height: 23%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
 .qa > div:last-child > div:nth-child(3) > div:last-child {
-  width: 95%;
-  height: 75%;
+  width: 92%;
+  height: 72%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -752,8 +751,8 @@
   flex-direction: row;
 }
 .qa > div:last-child > div:nth-child(4) > div:last-child {
-  width: 95%;
-  height: 60%;
+  width: 92%;
+  height: 65%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -761,7 +760,7 @@
 }
 .qa > div:last-child > div:nth-child(5) {
   width: 100%;
-  height: 32%;
+  height: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -776,7 +775,7 @@
   flex-direction: row;
 }
 .qa > div:last-child > div:nth-child(5) > div:last-child {
-  width: 95%;
+  width: 92%;
   height: 80%;
   display: flex;
   justify-content: flex-start;
@@ -784,6 +783,7 @@
   flex-direction: row;
 }/*# sourceMappingURL=style_mb.css.map */
   </style>
+
 </head>
 <body>
   <div id="root">
@@ -871,14 +871,14 @@
           <div>
             <img class="track-img" src="https://askin-jp.com/wp-content/uploads/2023/06/stoo_mb_2.jpg" >
             <div>
-              言語が日本語<br>ではない場合、<br>右上のlanguage<br>から変更します。
+              言語が日本語<br>ではない場合、<br>右上のlanguage<br>から変更して<br>下さい。
             </div>
           </div>
 
           <div>
             <img class="track-img" src="https://askin-jp.com/wp-content/uploads/2023/06/stoo_mb_3.jpg">
             <div>
-              注文番号や<br>お荷物伝票番号<br>などを入力し、<br>検索して下さい。
+              注文番号やお<br>荷物伝票番号<br>などを入力し、<br>検索して<br>下さい。
             </div>
           </div>
         </div>
@@ -900,9 +900,9 @@
         <div>
           <div>[お客様都合による取り消し・返品]</div>
           <div>
-            購入履歴ページで「入金待ち」「商品準備<br>中」「配送要請」と表示されている場合、<br>注文をキャンセルすることができます。<br>「配送中」や「発送予定日」が表示されて<br>いる場合の取り消しは一切受け付けており<br>ません。<br>
-            ※ 御注文ミスによる返品はお断りいたし<br>&nbsp;&nbsp;&nbsp;ますので御注文の際間違いがないかご<br>&nbsp;&nbsp;&nbsp;確認お願いします。<br>
-            ※ 当店ではお客様都合による交換、返品<br>&nbsp;&nbsp;&nbsp;は受け付けておりません。
+            購入履歴ページで「入金待ち」「商品<br>準備中」「配送要請」と表示されてい<br>る場合、注文のキャンセルができます。<br>「配送中」や「発送予定日」が表示<br>されている場合の取り消しは一切受け<br>付けておりません。<br>
+            ※ 御注文ミスによる返品はお断りいた<br>&nbsp;&nbsp;&nbsp;しますので御注文の際間違いがない<br>&nbsp;&nbsp;&nbsp;かご確認お願いします。<br>
+            ※ 当店ではお客様都合による交換、<br>&nbsp;&nbsp;&nbsp;返品は受け付けておりません。
           </div>
           <div></div>
           <div></div>
@@ -913,8 +913,8 @@
           <div>[発送ミス・不良による返品・交換]</div>
           <div>
             初期不良の場合、商品到着後7日以内に<br>ご連絡ください。その後の商品は初期不<br>良対象外となりますのでご了承下さい。<br>
-            ※ 交換前に必ず交換窓口よりご連絡お願<br>&nbsp;&nbsp;&nbsp;いします。連絡なしで交換された場合は<br>&nbsp;&nbsp;&nbsp;お受けできない場合がございます。
-            <br>※ 返品・交換の受付するためには配送時<br>&nbsp;&nbsp;&nbsp;の箱・送り状・商品・おまけなど必要と<br>&nbsp;&nbsp;&nbsp;なります。いずれか足りない場合、ご<br>&nbsp;&nbsp;&nbsp;対応ができなくなる可能性がございます<br>&nbsp;&nbsp;&nbsp;ので必ず、配送時の状態のまま保管を<br>&nbsp;&nbsp;&nbsp;お願い申し上げます。
+            ※ 交換前に必ず問い合わせをお願いし<br>&nbsp;&nbsp;&nbsp;ます。連絡なしで交換された場合、<br>&nbsp;&nbsp;&nbsp;お受けできない場合がございます。
+            <br>※ 返品・交換の受付するためには配送<br>&nbsp;&nbsp;&nbsp;時の箱・送り状・商品・おまけなど<br>&nbsp;&nbsp;&nbsp;必要となります。いずれか足りない<br>&nbsp;&nbsp;&nbsp;場合、ご対応ができなくなる可能性が<br>&nbsp;&nbsp;&nbsp;ございますので必ず、配送時の状態の<br>&nbsp;&nbsp;&nbsp;まま保管をお願い申し上げます。
           </div>
           <div></div>
           <div></div>
@@ -941,10 +941,10 @@
       <div>
         <div>
           <div>
-            [Q] 製品の消費期限はどうなりますか?
+            [Q] 製品の消費期限がありますか?
           </div>
           <div>
-            [A] 別途に表記された製造日付から3年<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;間です。商品に異常がある場合、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返品問い合わせまでご連絡お願いし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ます。
+            [A] 別途に表記された製造日付から<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3年間です。商品に異常がある<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;場合、返品問い合わせまでご連<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;絡お願いします。
             </div>
         </div>
 
@@ -953,7 +953,7 @@
             [Q] 妊婦も使っても大丈夫ですか?
           </div>
           <div>
-            [A] ASKINの全商品は低刺激成分のみ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使っております。ただ、ホルモン<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;の不均衡など敏感な時期には専門家<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;との相談後使用をおすすめします。
+            [A] ASKINの全商品は低刺激成分の<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;み使っております。ただ、ホル<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;モンの不均衡など敏感な時期は<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;専門家との相談後使用をおすす<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;めします。
             </div>
         </div>
 
@@ -962,7 +962,7 @@
             [Q] 製品のpHはどのぐらいですか?
           </div>
           <div>
-            [A] ASKINのすべての製品は肌の最適な<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;環境のための弱酸性(pH 4.5 ~ 5.5)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を維持しております。
+            [A] ASKINのすべての製品は肌の最<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;適な環境のための弱酸性(pH 4.5 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ 5.5)を維持しております。
             </div>
         </div>
 
@@ -971,7 +971,7 @@
             [Q] 製品にステロイドが入ってますか?
           </div>
           <div>
-            [A] ASKINの全品は低刺激テスト済みの<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;製品で、自然由来の成分など安定性<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;がある原料のみ使用しております。
+            [A] ASKINの全品は低刺激テスト<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;済みの製品で、自然由来の成分<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;など安定性がある原料のみ使用<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しております。
             </div>
         </div>
 
@@ -980,7 +980,7 @@
             [Q] 製品注文後、いつ配送されますか?
           </div>
           <div>
-            [A] 商品はご注文確認後1~2日以内に<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;発送いたしますが、全品は国際配送<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;になっております。平均的にお届け<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;まで7~10日程度かかりますが、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荒天や災害などの影響がある場合、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平均お届け日数よりもっと遅れる<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可能性がございます。ご了承くださ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;いませ。
+            [A] 商品はご注文確認後1~2日以内<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;に発送いたします。ただ、国際<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配送になるため平均的にお届け<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;まで7~10日程度かかります。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荒天や災害などの影響がある<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;場合平均お届け日数よりもっと<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;遅れる可能性がございますので<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ご了承くださいませ。
             </div>
         </div>
 

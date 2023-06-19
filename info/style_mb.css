@@ -22,9 +22,9 @@
 
 #root {
   width: 100vw;
-  height: 3200px;
+  height: auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #444444;
@@ -360,7 +360,7 @@
   font-weight: 600;
 }
 .track > div:nth-child(3) {
-  width: 95%;
+  width: 90%;
   height: 70%;
   display: flex;
   justify-content: space-around;
@@ -379,7 +379,7 @@
   width: 32%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   position: relative;
@@ -390,7 +390,7 @@
 }
 .track > div:nth-child(3) > div:first-child > div > div {
   width: 100%;
-  height: 35%;
+  height: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,7 +412,7 @@
 
 .refund {
   width: 100%;
-  height: 960px;
+  height: 1120px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -447,35 +447,37 @@
 }
 .refund > div:last-child > div {
   position: relative;
+  padding-left: 5px;
 }
 .refund > div:last-child > div > div:nth-child(1) {
   font-weight: 700;
+  font-size: 1rem;
 }
 .refund > div:last-child > div > div:nth-child(2) {
   font-size: 0.87rem;
   font-weight: 600;
-  line-height: 1.8;
+  line-height: 2;
   z-index: 2;
   text-align: justify;
 }
 .refund > div:last-child > div:nth-child(1) {
   width: 100%;
-  height: 35%;
+  height: 34%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-direction: column;
 }
 .refund > div:last-child > div:nth-child(1) > div:nth-child(1) {
   width: 95%;
-  height: 10%;
+  height: 11%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
 .refund > div:last-child > div:nth-child(1) > div:nth-child(2) {
-  width: 95%;
+  width: 92%;
   height: 85%;
   display: flex;
   justify-content: flex-start;
@@ -483,41 +485,41 @@
   flex-direction: row;
 }
 .refund > div:last-child > div:nth-child(1) > div:nth-child(3) {
-  width: 95%;
+  width: 92%;
   height: 4%;
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 40%;
+  top: 42%;
   left: 0%;
   z-index: 0;
 }
 .refund > div:last-child > div:nth-child(1) > div:nth-child(4) {
-  width: 95%;
+  width: 92%;
   height: 4%;
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 48%;
+  top: 50%;
   left: 0%;
   z-index: 0;
 }
 .refund > div:last-child > div:nth-child(1) > div:nth-child(5) {
-  width: 25%;
+  width: 45%;
   height: 4%;
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 55%;
+  top: 58%;
   left: 0%;
   z-index: 0;
 }
 .refund > div:last-child > div:nth-child(2) {
   width: 100%;
-  height: 40%;
+  height: 36%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-direction: column;
 }
 .refund > div:last-child > div:nth-child(2) > div:nth-child(1) {
@@ -543,7 +545,7 @@
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 23%;
+  top: 18.5%;
   left: 38%;
   z-index: 0;
 }
@@ -553,7 +555,7 @@
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 31%;
+  top: 25%;
   left: 0%;
   z-index: 0;
 }
@@ -563,7 +565,7 @@
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 38%;
+  top: 40%;
   left: 0%;
   z-index: 0;
 }
@@ -573,7 +575,7 @@
   background-color: rgba(253, 255, 172, 0.55);
   border-radius: 0;
   position: absolute;
-  top: 45%;
+  top: 46%;
   left: 0%;
   z-index: 0;
 }
@@ -589,15 +591,15 @@
 }
 .refund > div:last-child > div:nth-child(3) {
   width: 100%;
-  height: 20%;
+  height: 22%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 .refund > div:last-child > div:nth-child(3) > div:nth-child(1) {
   width: 95%;
-  height: 15%;
+  height: 17%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -614,7 +616,7 @@
 
 .qa {
   width: 100%;
-  height: 880px;
+  height: 1000px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -654,7 +656,7 @@
 }
 .qa > div:last-child > div:nth-child(1) {
   width: 100%;
-  height: 18%;
+  height: 15%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -669,7 +671,7 @@
   flex-direction: row;
 }
 .qa > div:last-child > div:nth-child(1) > div:last-child {
-  width: 95%;
+  width: 92%;
   height: 75%;
   display: flex;
   justify-content: flex-start;
@@ -686,15 +688,15 @@
 }
 .qa > div:last-child > div:nth-child(2) > div:first-child {
   width: 95%;
-  height: 20%;
+  height: 16.5%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
 .qa > div:last-child > div:nth-child(2) > div:last-child {
-  width: 95%;
-  height: 75%;
+  width: 92%;
+  height: 78%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -702,7 +704,7 @@
 }
 .qa > div:last-child > div:nth-child(3) {
   width: 100%;
-  height: 15%;
+  height: 13%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -710,15 +712,15 @@
 }
 .qa > div:last-child > div:nth-child(3) > div:first-child {
   width: 95%;
-  height: 20%;
+  height: 23%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
 .qa > div:last-child > div:nth-child(3) > div:last-child {
-  width: 95%;
-  height: 75%;
+  width: 92%;
+  height: 72%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -741,8 +743,8 @@
   flex-direction: row;
 }
 .qa > div:last-child > div:nth-child(4) > div:last-child {
-  width: 95%;
-  height: 60%;
+  width: 92%;
+  height: 65%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -750,7 +752,7 @@
 }
 .qa > div:last-child > div:nth-child(5) {
   width: 100%;
-  height: 32%;
+  height: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -765,7 +767,7 @@
   flex-direction: row;
 }
 .qa > div:last-child > div:nth-child(5) > div:last-child {
-  width: 95%;
+  width: 92%;
   height: 80%;
   display: flex;
   justify-content: flex-start;
