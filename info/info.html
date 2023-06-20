@@ -30,7 +30,7 @@
 
 #root {
   width: 950px;
-  height: 3560px;
+  height: 3080px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -169,21 +169,13 @@
 
 .delivery {
   width: 860px;
-  height: 1080px;
+  height: 500px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
-}
-.delivery > div:first-child {
-  width: 100%;
-  height: 34%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: row;
 }
-.delivery > div:first-child > div:nth-child(1) {
+.delivery > div:first-child {
   width: 25%;
   height: 100%;
   display: flex;
@@ -191,7 +183,7 @@
   align-items: center;
   flex-direction: column;
 }
-.delivery > div:first-child > div:nth-child(1) > h3 {
+.delivery > div:first-child > h3 {
   width: 80%;
   height: 20%;
   display: flex;
@@ -202,7 +194,7 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
-.delivery > div:first-child > div:last-child {
+.delivery > div:last-child {
   width: 70%;
   height: 100%;
   display: flex;
@@ -210,15 +202,15 @@
   align-items: center;
   flex-direction: column;
 }
-.delivery > div:first-child > div:last-child > div:nth-child(1) {
+.delivery > div:last-child > div:nth-child(1) {
   width: 100%;
-  height: 22%;
+  height: 20%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
-.delivery > div:first-child > div:last-child > div:nth-child(1) > h3 {
+.delivery > div:last-child > div:nth-child(1) > h3 {
   width: 95%;
   height: 20%;
   display: flex;
@@ -229,7 +221,7 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
-.delivery > div:first-child > div:last-child > div:nth-child(1) > div {
+.delivery > div:last-child > div:nth-child(1) > div {
   width: 95%;
   height: 60%;
   display: flex;
@@ -241,15 +233,15 @@
   line-height: 1.5;
   font-size: 1.1rem;
 }
-.delivery > div:first-child > div:last-child > div:nth-child(2) {
+.delivery > div:last-child > div:nth-child(2) {
   width: 100%;
-  height: 22%;
+  height: 20%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
-.delivery > div:first-child > div:last-child > div:nth-child(2) > h3 {
+.delivery > div:last-child > div:nth-child(2) > h3 {
   width: 95%;
   height: 20%;
   display: flex;
@@ -260,7 +252,7 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
-.delivery > div:first-child > div:last-child > div:nth-child(2) > div {
+.delivery > div:last-child > div:nth-child(2) > div {
   width: 95%;
   height: 60%;
   display: flex;
@@ -272,15 +264,15 @@
   line-height: 1.5;
   font-size: 1.1rem;
 }
-.delivery > div:first-child > div:last-child > div:nth-child(3) {
+.delivery > div:last-child > div:nth-child(3) {
   width: 100%;
-  height: 50%;
+  height: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
-.delivery > div:first-child > div:last-child > div:nth-child(3) > h3 {
+.delivery > div:last-child > div:nth-child(3) > h3 {
   width: 95%;
   height: 20%;
   display: flex;
@@ -290,7 +282,7 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
-.delivery > div:first-child > div:last-child > div:nth-child(3) > div {
+.delivery > div:last-child > div:nth-child(3) > div {
   width: 95%;
   height: 75%;
   display: flex;
@@ -301,124 +293,6 @@
   letter-spacing: 2px;
   line-height: 1.8;
   font-size: 1.1rem;
-}
-.delivery > div:last-child {
-  width: 100%;
-  height: 64%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  border-top: double 6px #c2c2c2;
-}
-.delivery > div:last-child > h3 {
-  width: 80%;
-  height: 4%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  letter-spacing: 3px;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.delivery > div:last-child > div:nth-child(2) {
-  width: 100%;
-  height: 30%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-}
-.delivery > div:last-child > div:nth-child(2) > div {
-  width: 25%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-.delivery > div:last-child > div:nth-child(2) > div > h3 {
-  width: 80%;
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  letter-spacing: 5px;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.delivery > div:last-child > div:nth-child(2) > a {
-  width: 65%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  font-weight: 600;
-  letter-spacing: 3px;
-  font-size: 1.3rem;
-}
-.delivery > div:last-child > div:nth-child(3) {
-  width: 98%;
-  height: 55%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-}
-.delivery > div:last-child > div:nth-child(3) > div {
-  width: 100%;
-  height: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-.delivery > div:last-child > div:nth-child(3) > div > div {
-  width: 32%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
-.delivery > div:last-child > div:nth-child(3) > div > div > img {
-  width: 90%;
-  height: auto;
-  transform: scale(1);
-  transition: 0.5s ease-in-out;
-}
-.delivery > div:last-child > div:nth-child(3) > div > div > img:hover {
-  transform: scale(2);
-  position: relative;
-  top: 0;
-  left: 5%;
-  z-index: 100;
-}
-.delivery > div:last-child > div:nth-child(3) > div > div > div {
-  width: 100%;
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  font-weight: 600;
-  letter-spacing: 3px;
-  text-align: center;
-  line-height: 2;
-}
-.delivery > div:last-child > div:nth-child(3) > h4 {
-  width: 95%;
-  height: 10%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  flex-direction: row;
-  font-size: 1.1rem;
-  letter-spacing: 3px;
 }
 
 .refund {
@@ -767,6 +641,7 @@
 }/*# sourceMappingURL=style.css.map */
   </style>
 
+
 </head>
 <body>
   <div id="root">
@@ -802,36 +677,33 @@
 
     <div class="delivery">
       <div>
+        <img src="https://askin-jp.com/wp-content/uploads/2023/06/delivery_pc.jpg">
+        <h3>配送案内</h3>
+      </div>
+      <div>
         <div>
-          <img src="https://askin-jp.com/wp-content/uploads/2023/06/delivery_pc.jpg">
-          <h3>配送案内</h3>
+          <h3>[送料]</h3>
+          <div>
+            全品送料無料。1品からでも送料無料でお届けします。
+          </div>
         </div>
 
         <div>
+          <h3>[運送会社]</h3>
           <div>
-            <h3>[送料]</h3>
-            <div>
-              全品送料無料。1品からでも送料無料でお届けします。
-            </div>
+            Qxpress 
           </div>
+        </div>
 
+        <div>
+          <h3>[平均お届け日数]</h3>
           <div>
-            <h3>[運送会社]</h3>
-            <div>
-              STOO + 佐川宅急便 
-            </div>
-          </div>
-
-          <div>
-            <h3>[平均お届け日数]</h3>
-            <div>
-              ASKINは韓国のブランドのため全商品韓国から発送する国際<br>発送になっております。商品発送後配送まで7~10日程度かかり<br>ますのでご了承ください。(荒天や災害などにより平均お届け<br>日数よりもっと遅れる可能性がございます。)
-            </div>
+            ASKINは韓国のブランドのため全商品韓国から発送する国際<br>発送になっております。商品発送後配送まで7~10日程度かかり<br>ますのでご了承ください。(荒天や災害などにより平均お届け<br>日数よりもっと遅れる可能性がございます。)
           </div>
         </div>
       </div>
 
-      <div>
+      <!-- <div>
         <h3>[配送追跡案内]</h3>
 
         <div>
@@ -868,7 +740,7 @@
             * 荷物伝票番号で検索する場合到着国の送り状番号を選択後検索お願いします。
           </h4>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="refund">

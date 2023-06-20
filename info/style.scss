@@ -4,7 +4,7 @@
 
 
 #root{
-  @include mixin.container-style(950px, 3560px, space-around, center, column);
+  @include mixin.container-style(950px, 3080px, space-around, center, column);
   color:var.$col-3;
 
   &>div{
@@ -98,156 +98,151 @@
 }
 
 .delivery{
-  @include mixin.container-style(860px, 1080px, space-evenly, center, column);
+  @include mixin.container-style(860px, 500px, space-evenly, center);
 
   &>div:first-child{
-    @include mixin.container-style(100%, 34%, space-between, center);
+    @include mixin.container-style(25%, 100%, space-evenly, center, column);
     // border: solid 1px salmon;
     
-    &>div:nth-child(1){
-      @include mixin.container-style(25%, 100%, space-evenly, center, column);
-      // border: 1px solid salmon;
-      &>h3{
-        @include mixin.container-style(80%, 20%, center, center);
-        letter-spacing: 5px;
-        font-size: 1.5rem;
-        font-weight: 700;
-
-        // background-color: aliceblue;
-      }
+    &>h3{
+      @include mixin.container-style(80%, 20%, center, center);
+      letter-spacing: 5px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      // background-color: aliceblue;
     }
+  }
+  
+  &>div:last-child{
+    @include mixin.container-style(70%, 100%, space-around, center, column);
+    // border: 1px solid salmon;
 
-    &>div:last-child{
-      @include mixin.container-style(70%, 100%, space-around, center, column);
-      // border: 1px solid salmon;
-
-      @for $i from 1 through 2{
-        &>div:nth-child(#{$i}){
-          @include mixin.container-style(100%, 22%, space-evenly,center,column);
-          // background-color: aliceblue;
-    
-          &>h3{
-            @include mixin.container-style(95%, 20%, flex-start, center);
-            letter-spacing: 3px;
-            font-size: 1.5rem;
-            font-weight: 700;
-            
-          }
-    
-          &>div{
-            @include mixin.container-style(95%, 60%, flex-start, center);
-            // background-color: aqua;
-            font-weight: 600;
-            letter-spacing: 2px;
-            line-height: 1.5;
-            font-size: 1.1rem;
-          }
-        }
-      }
-
-      &>div:nth-child(3){
-        @include mixin.container-style(100%, 50%, space-evenly,center,column);
+    @for $i from 1 through 2{
+      &>div:nth-child(#{$i}){
+        @include mixin.container-style(100%, 20%, space-evenly,center,column);
         // background-color: aliceblue;
   
         &>h3{
           @include mixin.container-style(95%, 20%, flex-start, center);
+          letter-spacing: 3px;
           font-size: 1.5rem;
           font-weight: 700;
-
-          // background-color: antiquewhite;
+          
         }
   
         &>div{
-          @include mixin.container-style(95%, 75%, flex-start, center);
+          @include mixin.container-style(95%, 60%, flex-start, center);
           // background-color: aqua;
           font-weight: 600;
           letter-spacing: 2px;
-          line-height: 1.8;
+          line-height: 1.5;
           font-size: 1.1rem;
         }
       }
     }
-  }
-
-  &>div:last-child{
-    @include mixin.container-style(100%, 64%, space-around, center,column);
-    // border: solid 1px salmon;
-    // background-color: aliceblue;
-    border-top: double 6px var.$col-2;
-
-    &>h3{
-      @include mixin.container-style(80%, 4%, center, center);
-      // border: 1px solid black;
-      letter-spacing: 3px;
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-
-    &>div:nth-child(2){
-      @include mixin.container-style(100%, 30%, space-evenly, center);
-      // background-color: aliceblue;
-
-      &>div{
-        @include mixin.container-style(25%, 100%, space-around, center, column);
-        &>h3{
-          @include mixin.container-style(80%, 10%, center, center);
-          letter-spacing: 5px;
-          font-size: 1.5rem;
-          font-weight: 700;
-
-        }
-      }
-
-      &>a{
-        @include mixin.container-style(65%, 100%, flex-start, center);
-        font-weight: 600;
-        letter-spacing: 3px;
-        font-size: 1.3rem;
-      }
-    }
 
     &>div:nth-child(3){
-      @include mixin.container-style(98%, 55%, space-evenly, center, column);
+      @include mixin.container-style(100%, 40%, space-evenly,center,column);
+      // background-color: aliceblue;
 
-      &>div{
-        @include mixin.container-style(100%, 90%, space-between, center);
+      &>h3{
+        @include mixin.container-style(95%, 20%, flex-start, center);
+        font-size: 1.5rem;
+        font-weight: 700;
 
-        &>div{ 
-          @include mixin.container-style(32%, 100%, space-around, center, column);
-          position: relative;
-          // border: solid salmon 1px;
-          
-          &>img{
-            @include mixin.size(90%, auto);
-            // border: solid salmon 1px;
-            transform: scale(1);
-            transition: .5s ;
-          }
-
-          &>img:hover{
-            transform: scale(2);
-            @include mixin.posi(relative,0,5%)
-          }
-
-          &>div{
-            @include mixin.container-style(100%, 30%, center, center);
-            // background-color: aliceblue;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-align: center;
-            line-height: 2;
-          }
-        }
+        // background-color: antiquewhite;
       }
 
-      &>h4{
-        @include mixin.container-style(95%, 10%, flex-start, flex-end);
-        // background-color: aliceblue;
+      &>div{
+        @include mixin.container-style(95%, 75%, flex-start, center);
+        // background-color: aqua;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1.8;
         font-size: 1.1rem;
-        letter-spacing: 3px
       }
     }
   }
+
+  // &>div:last-child{
+  //   @include mixin.container-style(100%, 64%, space-around, center,column);
+  //   // border: solid 1px salmon;
+  //   // background-color: aliceblue;
+  //   border-top: double 6px var.$col-2;
+
+  //   &>h3{
+  //     @include mixin.container-style(80%, 4%, center, center);
+  //     // border: 1px solid black;
+  //     letter-spacing: 3px;
+  //     font-size: 1.5rem;
+  //     font-weight: 700;
+  //   }
+
+  //   &>div:nth-child(2){
+  //     @include mixin.container-style(100%, 30%, space-evenly, center);
+  //     // background-color: aliceblue;
+
+  //     &>div{
+  //       @include mixin.container-style(25%, 100%, space-around, center, column);
+  //       &>h3{
+  //         @include mixin.container-style(80%, 10%, center, center);
+  //         letter-spacing: 5px;
+  //         font-size: 1.5rem;
+  //         font-weight: 700;
+
+  //       }
+  //     }
+
+  //     &>a{
+  //       @include mixin.container-style(65%, 100%, flex-start, center);
+  //       font-weight: 600;
+  //       letter-spacing: 3px;
+  //       font-size: 1.3rem;
+  //     }
+  //   }
+
+  //   &>div:nth-child(3){
+  //     @include mixin.container-style(98%, 55%, space-evenly, center, column);
+
+  //     &>div{
+  //       @include mixin.container-style(100%, 90%, space-between, center);
+
+  //       &>div{ 
+  //         @include mixin.container-style(32%, 100%, space-around, center, column);
+  //         position: relative;
+  //         // border: solid salmon 1px;
+          
+  //         &>img{
+  //           @include mixin.size(90%, auto);
+  //           // border: solid salmon 1px;
+  //           transform: scale(1);
+  //           transition: .5s ;
+  //         }
+
+  //         &>img:hover{
+  //           transform: scale(2);
+  //           @include mixin.posi(relative,0,5%)
+  //         }
+
+  //         &>div{
+  //           @include mixin.container-style(100%, 30%, center, center);
+  //           // background-color: aliceblue;
+  //           font-weight: 600;
+  //           letter-spacing: 3px;
+  //           text-align: center;
+  //           line-height: 2;
+  //         }
+  //       }
+  //     }
+
+  //     &>h4{
+  //       @include mixin.container-style(95%, 10%, flex-start, flex-end);
+  //       // background-color: aliceblue;
+  //       font-size: 1.1rem;
+  //       letter-spacing: 3px
+  //     }
+  //   }
+  // }
 }
 
 .refund{

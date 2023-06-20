@@ -32,18 +32,32 @@
 #root > div:nth-child(1) {
   border-top: 1px solid #c2c2c2;
   border-bottom: 1px solid #c2c2c2;
+  margin-bottom: 40px;
 }
 #root > div:nth-child(2) {
   border-top: 1px solid #c2c2c2;
   border-bottom: 1px solid #c2c2c2;
+  margin-bottom: 40px;
+}
+#root > div:nth-child(3) {
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+  margin-bottom: 40px;
+}
+#root > div:nth-child(4) {
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+  margin-bottom: 40px;
 }
 #root > div:nth-child(5) {
   border-top: 1px solid #c2c2c2;
   border-bottom: 1px solid #c2c2c2;
+  margin-bottom: 40px;
 }
 #root > div:nth-child(6) {
   border-top: 1px solid #c2c2c2;
   border-bottom: 1px solid #c2c2c2;
+  margin-bottom: 40px;
 }
 #root > div:first-child {
   width: 100%;
@@ -84,7 +98,6 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 40px;
 }
 .company > div:first-child {
   width: 25%;
@@ -176,9 +189,6 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  border-top: 1px solid #c2c2c2;
-  border-bottom: 4px double #c2c2c2;
-  margin-bottom: 10px;
 }
 .delivery > div:first-child {
   width: 25%;
@@ -417,7 +427,6 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 40px;
 }
 .refund > div:first-child {
   width: 25%;
